@@ -132,7 +132,8 @@ namespace CloudFlareDDNS
                     type = recordInfo.Result.Type,
                     name = recordInfo.Result.Name,
                     content = content,             
-                    ttl = recordInfo.Result.Ttl       
+                    ttl = recordInfo.Result.Ttl,
+                    proxied = recordInfo.Result.Proxied
                 })
                 .ReceiveJson<DnsRecordDetails>();
         }
