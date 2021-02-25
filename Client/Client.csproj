@@ -1,0 +1,21 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ 
+  <PropertyGroup>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client.net</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OutputPath>..\Build\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CitizenFX.Client.dll">
+    <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" /> <!--Optional-->
+    <Reference Include="System.Core" /> <!--Optional-->
+  <Compile Include="**/*.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

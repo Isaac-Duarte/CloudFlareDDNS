@@ -1,0 +1,33 @@
+ <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ 
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server.net</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OutputPath>..\Build\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CitizenFX.Server.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" /> <!--Optional-->
+    <Reference Include="System.Core" /> <!--Optional-->
+    <Compile Include="**/*.cs" />
+    <EmbeddedResource Include="__resource.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+      copy *.dll "C:\Users\isaac\Documents\FiveM\Server\txData\CFXDefault_37CD7F.base\resources\BattleRoyal\"
+      copy *.lua "C:\Users\isaac\Documents\FiveM\Server\txData\CFXDefault_37CD7F.base\resources\BattleRoyal\"
+      cd ..
+      icecon.exe -c "restart BattleRoyal" "127.0.0.1:30120" "123"
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

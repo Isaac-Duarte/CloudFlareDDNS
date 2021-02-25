@@ -1,0 +1,7 @@
+[
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Build FiveM - Resource"
+    }
+]

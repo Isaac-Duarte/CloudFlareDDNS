@@ -1,0 +1,16 @@
+{
+    "autorun": true,
+    "autokill": true,
+    "terminals": [
+      {
+        "name": "FiveM Server",
+        "description": "The FiveM debug server",
+        "icon": "code",
+        "cwd": "C:/Users/isaac/Documents/FiveM/BattleRoyal",
+        "commands": [
+          "C:/WINDOWS/system32/cmd.exe",
+          "cd C:/Users/isaac/Documents/FiveM/Server && start_3558_default.bat"
+        ]
+      }
+    ]
+}
