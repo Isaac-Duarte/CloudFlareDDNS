@@ -1,6 +1,0 @@
-C:\Users\isaac\Documents\FiveM\BattleRoyal\Build\Client.net.dll
-C:\Users\isaac\Documents\FiveM\BattleRoyal\Build\Client.net.pdb
-C:\Users\isaac\Documents\FiveM\BattleRoyal\Client\obj\Debug\Client.csprojAssemblyReference.cache
-C:\Users\isaac\Documents\FiveM\BattleRoyal\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
-C:\Users\isaac\Documents\FiveM\BattleRoyal\Client\obj\Debug\Client.net.dll
-C:\Users\isaac\Documents\FiveM\BattleRoyal\Client\obj\Debug\Client.net.pdb
